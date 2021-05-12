@@ -1,0 +1,374 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+::selection{
+    background-color: orangered;
+    color: #fff;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+}
+p,a,span,b,li,sub,sup{
+    font-family: 'Open Sans', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* header section css */
+.navbar-brand{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: orangered !important;
+    text-shadow: 3px 2px 1px #111;
+}
+.navbar .nav-item .nav-link .active {
+    color:orangered !important;
+}
+.navbar .nav-item .nav-link{
+    margin: 1rem;
+    color: #111;
+    transition: all .5s ease;
+}
+.navbar .nav-item .nav-link:hover{
+    color: orangered;
+}
+nav.navbar {
+    line-height: 5rem;
+}
+
+/* heroArea css */
+.heroArea{
+    background-image: url("./img/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+}
+.heroWrapper {
+    position: relative;
+    top: 200px;
+}
+
+.heroTitle h1 {
+    font-size: 40px;
+    color: #101130;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.heroTitle p {
+    font-size: 1.6rem;
+    color: #222;
+}
+
+.heroTitle h2 {
+    font-size: 2.2rem;
+    color: #222;
+    font-weight: 500;
+}
+/* button design css */
+.heroTitle a {
+    background: orangered;
+    padding: 1.5rem 3rem;
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    position: relative;
+    top: 5rem;
+    transition: all .5s ease;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    display: inline-block;
+    cursor: pointer;
+   
+}
+.heroTitle a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: all .5s ease;
+    border-radius: .5rem;
+    z-index: -1;
+}
+.heroTitle a:hover{
+    color: orangered;
+}
+.heroTitle a:hover::before{
+    transform: translateX(-0);
+}
+
+/* aboutSction css */
+.aboutSction{
+    padding: 50px 0;
+}
+.aboutImg img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px #111;
+    border: .5rem solid orangered;
+}
+.aboutTitle h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color:-#111;
+}
+
+.aboutTitle {
+    position: relative;
+    top: 50px;
+}
+
+.progressBar {
+    position: relative;
+    top: 50px;
+}
+
+.progressBar h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #111;
+}
+/* serviceSection css */
+.serviceSection{
+    padding: 50px 0;
+}
+.servicesTitle h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #101130;
+    position: relative;
+    margin-bottom: 8rem;
+}
+
+.servicesTitle h3:after {
+    content: "";
+    position: absolute;
+    top: 44px;
+    left: 46%;
+    width: 10rem;
+    border-bottom: .5rem solid orangered;
+    text-align: center;
+}
+.servicesWrapper {
+    background: #fff;
+    box-shadow: 0px 0px 5px orangered;
+    padding: 3rem;
+    text-align: center
+    transition: all .5s ease;  
+}
+.servicesWrapper:hover{
+    box-shadow: none;
+    border: .1rem solid #ddd;
+}
+.sicon span i {
+    font-size: 3rem;
+    display: block;
+    background: orangered;
+    width: 7rem;
+    height: 7rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    margin: auto;
+    padding: 1.7rem;
+    margin-bottom: 2rem;
+}
+.serviceTitle h3 {
+    font-size: 2.5rem;
+    color: #101130;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.serviceContent p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #aaa;
+}
+/* protfolio section css */
+.protfolioSection{
+    padding: 50px 0;
+}
+.protImg {
+    width: 400px;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+}
+
+.protImg img {
+     width: 400px;
+     height: 320px;
+}
+.protImgContent {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: #ff4500c4;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    transition: all .5s ease;
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+   
+}
+.protImg:hover .protImgContent{
+   left: 0;
+}
+.protImgContent a {
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    display: inline-block;
+    border: .1rem solid #fff;
+    transition: all .5s ease;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.protImgContent a:hover {
+    background: #fff;
+    color: orangered;
+}
+
+.protImgContent h4 {
+    margin-top: 4rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+/* blogSection css */
+.blogSection{
+    padding: 50px 0;
+}
+.blogWrapper {
+    box-shadow: 0px 0px 5px orangered;
+    transition: all .5s ease;
+}
+.blogWrapper:hover{
+    box-shadow: none;
+}
+span.bRight {
+    margin-left: 9rem !important;
+}
+h5.bTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: orangered;
+    padding: 1rem 0;
+}
+.card-body span i {
+    font-size: 1.6rem;
+    color: orangered;
+}
+/* contactSection css */
+.contactSection{
+    padding: 50px 0;
+    background-image: url("./img/contact.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.form-control {
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+}
+label.form-label {
+    color: #fff !important;
+    font-size: 1.8rem;
+}
+label {
+    color: #fff;
+    font-size: 1.8rem;
+}
+/* footerSection css */
+.footerSection{
+    padding: 50px 0;
+    background-color: #000000;
+    color:#fff;
+}
+.footerTitle h5 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.footerContent ul li {
+    line-height: 2;
+}
+.footerContent ul li {
+    line-height: 2;
+}
+.footerImg img {
+    box-shadow: 0px 0px 8px orangered;
+    border-radius: .5rem;
+}
+.footerContent ul li a {
+    color: #fff;
+    font-size: 1.6rem;
+    transition: all .5s ease;
+}
+.footerContent ul li a:hover{
+    color: orangered;
+}
+
+.footerContent ul li a i {
+    color: orangered;
+    font-size: 1.7rem;
+}
+
+.footerContent ul li i {
+    color: orangered;
+    font-size: 1.7rem;
+    margin-right: 1rem;
+}
+.copyRight p b {
+    color: orangered;
+    text-shadow: 1px 0px 0px #fff;
+}
+/* back to up btn css */
+a.backToUp i {
+    position: relative;
+    top: -70px;
+    left: 100%;
+    width: 5rem;
+    height: 5rem;
+    background: orangered;
+    display: block;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+}
